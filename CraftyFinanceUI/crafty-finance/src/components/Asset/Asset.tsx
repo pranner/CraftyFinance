@@ -1,29 +1,30 @@
-import React, { useEffect } from 'react';
+// import React, { useEffect } from 'react';
+import React from 'react';
 
 type AssetProps = {
   chequing: number;
 }
 
-export const Asset: React.FC<AssetProps> = (assets_data) => {
-  const assetsUrl = 'http://localhost:5000/asset'
-  fetch(assetsUrl, { mode: "no-cors" })
-    .then(
-      function (response) {
-        console.log(response)
-        if (response.status !== 200) {
-          console.log('Something went wrong in Assets. Status Code: ' +
-            response.status);
-          return;
-        }
-        response.json().then(function (data) {
-          console.log(data);
-        });
-      }
-    )
-    .catch(function (err) {
-      console.log('Fetch Error :-S', err);
-    });
+async function GetData(url = '', data = {}) {
+  // Default options are marked with *
+  const response = await fetch(url, {
+    method: 'GET', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, *same-origin, omit
+    headers: {
+      'Access-Control-Allow-Origin': '',
+      'Content-Type': 'application/json'
+    },
+  });
+  return await response.json();
+}
 
+export const Asset: React.FC<AssetProps> = (assets) => {
+  const assetsUrl = 'https://localhost:5001/asset'
+  const response = GetData(assetsUrl);
+
+  console.log(response);
 
   return (
     <div className="Asset">
@@ -40,7 +41,7 @@ export const Asset: React.FC<AssetProps> = (assets_data) => {
           <tr>
             <td>Chequing</td>
             <td></td>
-            <td>{assets_data.chequing}</td>
+            <td>{assets.chequing}</td>
           </tr>
           <tr>
             <td>Savings for Taxes</td>

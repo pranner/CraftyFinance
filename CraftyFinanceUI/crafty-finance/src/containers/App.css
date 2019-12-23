@@ -1,10 +1,5 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  text-align: left;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -29,10 +24,5 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.Asset input {
-  text-align: right;
-  padding-right: 13px;
 }
 

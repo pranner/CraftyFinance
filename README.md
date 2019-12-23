@@ -30,7 +30,6 @@ Install with `npm install -S [packagename]`
 
 ## Kown Issues/Bugs:
 - While the API has been tested manually, unit tests have not been added yet
-- If you input a string in the UI instead of a number amount, it will crash
 - Currency Exchange Calculation has not been completed yet
 - BONUS: Monthly Calculations using the interest rate have not been completed yet. Right now it is just taking the liability amount and diving it by 12
 

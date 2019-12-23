@@ -74,6 +74,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="creditCard1Interest"
                 id="creditCard1Interest"
                 value={form.creditCard1Interest}
@@ -84,6 +85,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="creditCard1"
                 id="creditCard1"
                 value={form.creditCard1}
@@ -101,6 +103,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="creditCard2Interest"
                 id="creditCard2Interest"
                 value={form.creditCard2Interest}
@@ -111,6 +114,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="creditCard2"
                 id="creditCard2"
                 value={form.creditCard2}
@@ -128,6 +132,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="otherCreditInterest"
                 id="otherCreditInterest"
                 value={form.otherCreditInterest}
@@ -138,6 +143,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="otherCredit"
                 id="otherCredit"
                 value={form.otherCredit}
@@ -160,6 +166,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="mortgage1Interest"
                 id="mortgage1Interest"
                 value={form.mortgage1Interest}
@@ -170,6 +177,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="mortgage1"
                 id="mortgage1"
                 value={form.mortgage1}
@@ -187,6 +195,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="mortgage2Interest"
                 id="mortgage2Interest"
                 value={form.mortgage2}
@@ -197,6 +206,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="mortgage2"
                 id="mortgage2"
                 value={form.mortgage2}
@@ -214,6 +224,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="lineOfCreditInterest"
                 id="lineOfCreditInterest"
                 value={form.lineOfCreditInterest}
@@ -224,6 +235,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="lineOfCredit"
                 id="lineOfCredit"
                 value={form.lineOfCredit}
@@ -241,6 +253,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="investmentLoanInterest"
                 id="investmentLoanInterest"
                 value={form.investmentLoanInterest}
@@ -251,6 +264,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="investmentLoan"
                 id="investmentLoan"
                 value={form.investmentLoan}
@@ -268,6 +282,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="studentLoanInterest"
                 id="studentLoanInterest"
                 value={form.studentLoanInterest}
@@ -278,6 +293,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="studentLoan"
                 id="studentLoan"
                 value={form.studentLoan}
@@ -295,6 +311,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="carLoanInterest"
                 id="carLoanInterest"
                 value={form.carLoanInterest}
@@ -305,6 +322,7 @@ export const Liability: React.FC<{ liabilityParentCallback: (n: any) => any }> =
             </Grid>
             <Grid item xs={3}>
               <Input
+                type="number"
                 name="carLoan"
                 id="carLoan"
                 value={form.carLoan}

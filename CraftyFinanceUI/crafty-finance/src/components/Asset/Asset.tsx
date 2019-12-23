@@ -79,6 +79,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
         </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="chequingInterest"
               id="chequingInterest"
               value={form.chequingInterest}
@@ -89,6 +90,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
           </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="chequing"
               id="chequing"
               value={form.chequing}
@@ -103,6 +105,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
         </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="savingsForTaxesInterest"
               id="savingsForTaxesInterest"
               value={form.savingsForTaxesInterest}
@@ -113,6 +116,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
           </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="savingsForTaxes"
               id="savingsForTaxes"
               value={form.savingsForTaxes}
@@ -127,6 +131,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
         </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="rainyDayFundInterest"
               id="rainyDayFundInterest"
               value={form.rainyDayFundInterest}
@@ -137,6 +142,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
           </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="rainyDayFund"
               id="rainyDayFund"
               value={form.rainyDayFund}
@@ -151,6 +157,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
         </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="savingsForFunInterest"
               id="savingsForFunInterest"
               value={form.savingsForFunInterest}
@@ -161,6 +168,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
           </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="savingsForFun"
               id="savingsForFun"
               value={form.savingsForFun}
@@ -175,6 +183,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
         </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="savingsForTravelInterest"
               id="savingsForTravelInterest"
               value={form.savingsForTravelInterest}
@@ -185,6 +194,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
           </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="savingsForTravel"
               id="savingsForTravel"
               value={form.savingsForTravel}
@@ -199,6 +209,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
         </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="savingsForPersonalDevelopmentInterest"
               id="savingsForPersonalDevelopmentInterest"
               value={form.savingsForPersonalDevelopmentInterest}
@@ -209,6 +220,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
           </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="savingsForPersonalDevelopment"
               id="savingsForPersonalDevelopment"
               value={form.savingsForPersonalDevelopment}
@@ -223,6 +235,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
         </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="investment1Interest"
               id="investment1Interest"
               value={form.investment1Interest}
@@ -233,6 +246,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
           </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="investment1"
               id="investment1"
               value={form.investment1}
@@ -247,6 +261,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
         </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="investment2Interest"
               id="investment2Interest"
               value={form.investment2Interest}
@@ -257,6 +272,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
           </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="investment2"
               id="investment2"
               value={form.investment2}
@@ -271,6 +287,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
         </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="investment3Interest"
               id="investment3Interest"
               value={form.investment3Interest}
@@ -281,6 +298,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
           </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="investment3"
               id="investment3"
               value={form.investment3}
@@ -295,6 +313,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
         </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="investment4Interest"
               id="investment4Interest"
               value={form.investment4Interest}
@@ -305,6 +324,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
           </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="investment4"
               id="investment4"
               value={form.investment4}
@@ -319,6 +339,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
         </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="investment5Interest"
               id="investment5Interest"
               value={form.investment5Interest}
@@ -329,6 +350,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
           </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="investment5"
               id="investment5"
               value={form.investment5}
@@ -348,6 +370,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
         </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="primaryHomeInterest"
               id="primaryHomeInterest"
               value={form.primaryHomeInterest}
@@ -358,6 +381,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
           </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="primaryHome"
               id="primaryHome"
               value={form.primaryHome}
@@ -372,6 +396,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
         </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="secondHomeInterest"
               id="secondHomeInterest"
               value={form.secondHomeInterest}
@@ -383,6 +408,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
           </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="secondHome"
               id="secondHome"
               value={form.secondHome}
@@ -397,6 +423,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
         </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="otherInterest"
               id="otherInterest"
               value={form.otherInterest}
@@ -407,6 +434,7 @@ export const Asset: React.FC<{ assetParentCallback: (n: any) => any }> =
           </Grid>
           <Grid item xs={4}>
             <Input
+              type="number"
               name="other"
               id="other"
               value={form.other}

@@ -32,10 +32,12 @@ Install with `npm install -S [packagename]`
 - While the API has been tested manually, unit tests have not been added yet
 - If you input a string in the UI instead of a number amount, it will crash
 - Currency Exchange Calculation has not been completed yet
+- BONUS: Monthly Calculations using the interest rate have not been completed yet. Right now it is just taking the liability amount and diving it by 12
 
 ## References Used
 - [Initial installation and setup of React with TypeScript Configurations](https://fettblog.eu/typescript-react/getting-started/)
 - [Debugging and working with React in VSCode](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
 - [Fetching Data with React hooks](https://www.robinwieruch.de/react-hooks-fetch-data)
 - [Installing Material UI](https://material-ui.com/getting-started/installation/)
+- [Sending Data from Child to Parent Component React hooks](https://stackoverflow.com/questions/55726886/react-hook-send-data-from-child-to-parent-component)
 

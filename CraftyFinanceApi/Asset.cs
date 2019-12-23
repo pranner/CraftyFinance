@@ -6,7 +6,7 @@ namespace CraftyFinanceApi
     {
         public decimal Chequing { get; set; }
         public decimal ChequingInterest { get; set; }
-        public decimal TaxSaving { get; set; }
+        public decimal SavingsForTaxes { get; set; }
         public decimal TaxSavingInterest { get; set; }
         public decimal RainyFund { get; set; }
         public decimal RainyFundInterest { get; set; }
@@ -32,6 +32,6 @@ namespace CraftyFinanceApi
         public decimal SecondHomeInterest { get; set; }
         public decimal Other { get; set; }
         public decimal OtherInterest { get; set; }
-               
+
     }
 }

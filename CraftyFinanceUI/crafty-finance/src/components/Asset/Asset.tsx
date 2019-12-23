@@ -1,30 +1,39 @@
 // import React, { useEffect } from 'react';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-type AssetProps = {
-  chequing: number;
-}
-
-async function GetData(url = '', data = {}) {
-  // Default options are marked with *
-  const response = await fetch(url, {
-    method: 'GET', // *GET, POST, PUT, DELETE, etc.
-    mode: 'cors', // no-cors, *cors, same-origin
-    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'same-origin', // include, *same-origin, omit
-    headers: {
-      'Access-Control-Allow-Origin': '',
-      'Content-Type': 'application/json'
-    },
+export const Asset: React.FC = () => {
+  const [form, setState] = useState({
+    chequing: 0,
+    savingsForTaxes: 0,
+    rainyDayFund: 0,
+    savingsForFun: 0,
+    savingsForTravel: 0,
+    savingsForPersonalDevelopment: 0,
+    investment1: 0,
+    investment2: 0,
+    investment3: 0,
+    investment4: 0,
+    investment5: 0,
+    primaryHome: 0,
+    secondHome: 0
   });
-  return await response.json();
-}
 
-export const Asset: React.FC<AssetProps> = (assets) => {
-  const assetsUrl = 'https://localhost:5001/asset'
-  const response = GetData(assetsUrl);
+  const [totalAssets, setTotalAssets] = useState(0);
 
-  console.log(response);
+  useEffect(() => {
+    const url = 'https://localhost:5001/asset';
+    fetch(url, {
+      method: 'POST',
+      cache: 'no-cache',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(form)
+    })
+      .then(response => response.json())
+      .then(data => setTotalAssets(data));
+  });
+
 
   return (
     <div className="Asset">
@@ -41,12 +50,30 @@ export const Asset: React.FC<AssetProps> = (assets) => {
           <tr>
             <td>Chequing</td>
             <td></td>
-            <td>{assets.chequing}</td>
+            <td>
+              <input
+                name="chequing"
+                type="number"
+                value={form.chequing}
+                onChange={e => {
+                  setState({ ...form, [e.target.name]: +e.target.value })
+                }}
+              />
+            </td>
           </tr>
           <tr>
             <td>Savings for Taxes</td>
             <td></td>
-            <td></td>
+            <td>
+              <input
+                name="savingsForTaxes"
+                type="number"
+                value={form.savingsForTaxes}
+                onChange={e => {
+                  setState({ ...form, [e.target.name]: +e.target.value })
+                }}
+              />
+            </td>
           </tr>
           <tr>
             <td>Rainy Day Fund</td>
@@ -111,7 +138,7 @@ export const Asset: React.FC<AssetProps> = (assets) => {
         <tfoot>
           <tr>
             <td>Total Assets</td>
-            <td>$$$$$$</td>
+            <td>{totalAssets}</td>
           </tr>
         </tfoot>
       </table>

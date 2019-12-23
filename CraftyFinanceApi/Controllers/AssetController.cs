@@ -15,7 +15,7 @@ namespace CraftyFinanceApi.Controllers
         {
             Chequing = 3,
             ChequingInterest = 55,
-            TaxSaving = 300.5m,
+            SavingsForTaxes = 300.5m,
             TaxSavingInterest = 20,
             RainyFund = 5,
             RainyFundInterest = 5,
@@ -37,10 +37,11 @@ namespace CraftyFinanceApi.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        public ActionResult<Asset> Get()
+        [HttpPost]
+        public ActionResult<decimal> GetTotalAssets(Asset asset)
         {
-            return Ok(Assets);
+            var totals = asset.Chequing + asset.SavingsForTaxes;
+            return Ok(totals);
         }
     }
 }

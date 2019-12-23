@@ -6,7 +6,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Asset chequing={30} />
+        <Asset />
         {/* <Liability></Liability> */}
       </header>
     </div>

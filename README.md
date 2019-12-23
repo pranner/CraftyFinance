@@ -3,7 +3,9 @@
 
 Author: Pranjali Pokharel
 
-A crafty app to help you take care of your finances. This repository includes both the .NET API as well as the React front-end.
+A crafty app to help you take care of your finances. This app allows you to keep track of your assets and liabilties and come up with a total net worth based on these values. 
+
+This repository includes both the C#, .NET API as well as the React front-end.
 
 ## Build instructions
 You will need to have the following installed in order to run the application in development mode: 

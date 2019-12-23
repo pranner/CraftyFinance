@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Grid from '@material-ui/core/Grid';
 import { Asset } from '../components/Asset/Asset';
@@ -16,6 +16,15 @@ const App: React.FC = () => {
     setTotalLiabilites(totalLiabilitiesCallback);
     setTotalNetworth(totalAssets + totalLiabilities);
   }
+
+  useEffect(() => {
+    const xchangeUrl = 'https://api.exchangeratesapi.io/latest';
+    fetch(xchangeUrl, {
+      method: 'GET'
+    })
+      .then(response => console.log(response));
+  });
+
   return (
     <div className="App">
       <header className="App-header">

@@ -14,6 +14,7 @@ You will need to have the following installed in order to run the application in
 You will also need to have the API server running before you start using the front-end. To do this:
 - `cd` into the `CraftyFinanceApi` folder
 -  enter command `dotnet run` to run the server
+- server should be running at `http://localhost:5000/`
 
 For running the front-end app, open terminal or command line:
 - `cd` into the `CraftyFinanceUI/crafty-finance` folder
@@ -27,10 +28,10 @@ Install with `npm install -S [packagename]`
 - tslib v1.10.0
 - @material-ui/core v4.8.0
 
-## Running Unit Tests:
-
-The unit tests can be run by the following command `hello world`
-
+## Kown Issues/Bugs:
+- While the API has been tested manually, unit tests have not been added yet
+- If you input a string in the UI instead of a number amount, it will crash
+- Currency Exchange Calculation has not been completed yet
 
 ## References Used
 - [Initial installation and setup of React with TypeScript Configurations](https://fettblog.eu/typescript-react/getting-started/)

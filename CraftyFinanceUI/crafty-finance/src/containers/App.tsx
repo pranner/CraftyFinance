@@ -9,7 +9,21 @@ const App: React.FC = () => {
     <div className="App">
       <header className="App-header">
         Crafty Finance: Networth Tracker
+        <hr />
       </header>
+      <Grid container item xs={12} spacing={3}>
+        <Grid item xs={12}>
+          Select Curreny: CAD
+        </Grid>
+        <Grid container item xs={12} spacing={3}>
+          <Grid item xs={6}>
+            <h3>Net Worth</h3>
+          </Grid>
+          <Grid className="Total-networth" item xs={6}>
+            <h3>$ Assets-Liabilities</h3>
+          </Grid>
+        </Grid>
+      </Grid>
       <Grid container item xs={12} spacing={3}>
         <Grid item md={6}>
           <Asset />

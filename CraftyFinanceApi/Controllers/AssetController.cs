@@ -7,41 +7,25 @@ using Microsoft.Extensions.Logging;
 
 namespace CraftyFinanceApi.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class AssetController : ControllerBase
+  [ApiController]
+  [Route("[controller]")]
+  public class AssetController : ControllerBase
+  {
+    private readonly ILogger<AssetController> _logger;
+
+    public AssetController(ILogger<AssetController> logger)
     {
-        private static Asset Assets = new Asset
-        {
-            Chequing = 3,
-            ChequingInterest = 55,
-            SavingsForTaxes = 300.5m,
-            TaxSavingInterest = 20,
-            RainyFund = 5,
-            RainyFundInterest = 5,
-            FunSaving = 20,
-            FunSavingInterest = 20,
-            TravelSaving = 565,
-            TravelSavingInterest = 1.3m,
-            PersonalDevSaving = 42,
-            PersonalDevSavingInterest = 0.5m,
-            Investment1 = 8000,
-            Investment1Interest = 2.5m,
-            Investment2 = 500,
-            Investment2Interest = 1.01m,
-        };
-        private readonly ILogger<AssetController> _logger;
-
-        public AssetController(ILogger<AssetController> logger)
-        {
-            _logger = logger;
-        }
-
-        [HttpPost]
-        public ActionResult<decimal> GetTotalAssets(Asset asset)
-        {
-            var totals = asset.Chequing + asset.SavingsForTaxes;
-            return Ok(totals);
-        }
+      _logger = logger;
     }
+
+    [HttpPost]
+    public ActionResult<decimal> GetTotalAssets(Asset asset)
+    {
+      var assetTotals = asset.Chequing + asset.SavingsForTaxes + asset.RainyDayFund +
+        asset.SavingsForFun + asset.SavingsForTravel + asset.SavingsForPersonalDevelopment +
+        asset.Investment1 + asset.Investment2 + asset.Investment3 + asset.Investment4 +
+        asset.Investment5 + asset.PrimaryHome + asset.SecondHome + asset.Other;
+      return Ok(assetTotals);
+    }
+  }
 }

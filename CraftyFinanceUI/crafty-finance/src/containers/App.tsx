@@ -35,8 +35,6 @@ const App: React.FC = () => {
         xchangeRates.set("AUD", data.rates.AUD);
       });
 
-    console.log(xchangeRates);
-
     setCurrencyDropdown(event.target.value);
     setCurrencyRate(xchangeRates.get(event.target.value));
     setTotalNetworth((totalAssets - totalLiabilities) * currencyRate);

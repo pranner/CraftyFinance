@@ -30,10 +30,11 @@ Install with `npm install -S [packagename]`
 - tslib v1.10.0
 - @material-ui/core v4.8.0
 
-## Kown Issues/Bugs:
+## Kown Issues & Assumptions:
+- Currency Exchange Calculation has been done for the final net worth value only
 - While the API has been tested manually, all unit tests have not been added yet
 - The net worth calculations are done in the front-end and not received from the API, this was done to showcase an understanding of Data transfer from Child to Parent in React. I had already started working on doing the total Networth calculation on the React side before reading the part about this information coming from the API, so I did not have time to go back and change it.
-- Currency Exchange Calculation has not been completed yet
+- The fetching of data on the React front end assumes a 200 ok response and does not have a catch to catch for other http statuses. (Ran out of time to implement this)
 - BONUS: Monthly Calculations using the interest rate have not been completed yet. Right now it is just taking the liability amount and diving it by 12
 
 ## References Used

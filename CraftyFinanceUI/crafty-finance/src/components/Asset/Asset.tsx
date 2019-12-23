@@ -56,15 +56,17 @@ export const Asset: React.FC = () => {
   return (
     <div className="Asset">
       <h3>Assets</h3>
-      <Grid container item xs={12} md={6} spacing={3}>
+      <Grid container item xs={12} spacing={3}>
         <Grid item xs={12}>
-          Long Term Assets
+          <hr />
+          <h5>Cash and Investments</h5>
+          <hr />
         </Grid>
         <Grid container item spacing={3} xs={12}>
-          <Grid item xs={5}>
-            Cash and Investments
+          <Grid item xs={4}>
+
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={4}>
             Interest Rate
           </Grid>
           <Grid item xs={4}>
@@ -334,6 +336,11 @@ export const Asset: React.FC = () => {
             }}
             startAdornment={<InputAdornment position="start">$</InputAdornment>}
           />
+        </Grid>
+        <Grid item xs={12}>
+          <hr />
+          <h5>Long Term Assets</h5>
+          <hr />
         </Grid>
         <Grid item xs={4}>
           Primary Home

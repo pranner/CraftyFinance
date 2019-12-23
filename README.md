@@ -32,7 +32,7 @@ Install with `npm install -S [packagename]`
 
 ## Known Issues & Assumptions:
 - Currency Exchange Calculation has been done for the final net worth value only. It has also not been rounded (this is a bug).
-- While the API has been tested manually, all unit tests have not been added yet. Ideally, unit tests should be added to test the Api calls, however I ran out of time to implement it. The Api was tested using Swagger. This can be accessed by going to `http://localhost:5000/swagger`or `https://localhost:5001/swagger'
+- While the API has been tested manually, all unit tests have not been added yet. Ideally, unit tests should be added to test the Api calls, however I ran out of time to implement it. The Api was tested using Swagger. This can be accessed by going to `http://localhost:5000/swagger`or `https://localhost:5001/swagger`
 - The net worth calculations are done in the front-end and not received from the API, this decision was made to showcase an understanding of Data transfer from Child to Parent component in React Hooks. I had already started working on doing the total Networth calculation on the React side before reading the part about this information coming from the API, so I did not have time to go back and change it.
 - The fetching of data on the React front end assumes a 200 ok response and does not have a catch to catch other http statuses. (Ran out of time to implement this)
 - BONUS: Monthly Calculations using the interest rate have not been completed yet. Right now it is just taking the liability amount and diving it by 12
